@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import Komititp from "fonts/Komititp.woff";
-import Georgia from "fonts/Georgia.woff";
+import Komititp from "../fonts/Komtitp.woff";
+import Georgia from "../fonts/Georgia.woff";
 
 const GlobalStyle = createGlobalStyle`
   * {
