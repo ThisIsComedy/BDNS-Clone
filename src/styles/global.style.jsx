@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Komititp from "../fonts/Komtitp.woff";
+import Komtitp from "../fonts/Komtitp.woff";
 import Georgia from "../fonts/Georgia.woff";
 
 const GlobalStyle = createGlobalStyle`
@@ -52,12 +52,12 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
   // font-family: 'Londrina Solid', cursive;
 
-  // Komititp 폰트
+  // Komtitp 폰트
   @font-face {
-    font-family: 'Komititp';
-    src: local('Komititp'), local('Komititp');
+    font-family: 'Komtitp';
+    src: local('Komtitp'), local('Komtitp');
     font-style: normal;
-    src: url(${Komititp}) format('woff');
+    src: url(${Komtitp}) format('woff');
   }
   // font-family: KOMTITP;
 
