@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import Komititp from "fonts/Komititp.ttf";
-import Georgia from "fonts/Georgia.ttf";
+import Komititp from "fonts/Komititp.woff";
+import Georgia from "fonts/Georgia.woff";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -57,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Komititp';
     src: local('Komititp'), local('Komititp');
     font-style: normal;
-    src: url(${Komititp}) format('ttf');
+    src: url(${Komititp}) format('woff');
   }
   // font-family: KOMTITP;
 
@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Georgia';
     src: local('Georgia'), local('Georgia');
     font-style: normal;
-    src: url(${Georgia}) format('ttf');
+    src: url(${Georgia}) format('woff');
   }
   // font-family: 'Georgia';
 `;
