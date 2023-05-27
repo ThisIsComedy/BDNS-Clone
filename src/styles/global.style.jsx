@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 import Komtitp from "../fonts/Komtitp.woff";
 import Georgia from "../fonts/Georgia.woff";
+import LondrinaSolid from "../fonts/LondrinaSolid.woff";
+import NanumMyeongjo from "../fonts/NanumMyeongjo.woff";
+import LatoRegular from "../fonts/LatoRegular.woff";
+import LatoBold from "../fonts/LatoBold.woff";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -40,28 +44,52 @@ const GlobalStyle = createGlobalStyle`
     display: none !important;
   }
 
-  // Lato 폰트
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-  // font-family: 'Lato','Noto Sans KR';
+  // LatoRegular(300,400)
+  @font-face {
+    font-family: 'LatoRegular';
+    src: local('LatoRegular'), local('LatoRegular');
+    font-style: normal;
+    src: url(${LatoRegular}) format('woff');
+  }
+  // font-family: 'LatoRegular','Noto Sans KR';
 
-  // Nanum Myeongjo 폰트
-  @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
-  // font-family: 'Nanum Myeongjo', serif;
+  // LatoBold(700)
+  @font-face {
+    font-family: 'LatoBold';
+    src: local('LatoBold'), local('LatoBold');
+    font-style: normal;
+    src: url(${LatoBold}) format('woff');
+  }
+  // font-family: 'LatoBold','Noto Sans KR';
 
-  // Londrina Solid 폰트
-  @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
-  // font-family: 'Londrina Solid', cursive;
+  // Nanum Myeongjo
+  @font-face {
+    font-family: 'NanumMyeongjo';
+    src: local('NanumMyeongjo'), local('NanumMyeongjo');
+    font-style: normal;
+    src: url(${NanumMyeongjo}) format('woff');
+  }
+  // font-family: 'NanumMyeongjo', serif;
 
-  // Komtitp 폰트
+  // Londrina Solid
+  @font-face {
+    font-family: 'LondrinaSolid';
+    src: local('LondrinaSolid'), local('LondrinaSolid');
+    font-style: normal;
+    src: url(${LondrinaSolid}) format('woff');
+  }
+  // font-family: 'LondrinaSolid';
+
+  // Komtitp
   @font-face {
     font-family: 'Komtitp';
     src: local('Komtitp'), local('Komtitp');
     font-style: normal;
     src: url(${Komtitp}) format('woff');
   }
-  // font-family: KOMTITP;
+  // font-family: 'Komtitp';
 
-  // Georgia 폰트
+  // Georgia
   @font-face {
     font-family: 'Georgia';
     src: local('Georgia'), local('Georgia');
