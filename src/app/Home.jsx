@@ -118,7 +118,7 @@ const MenuBannerShadow = styled.span`
 
 const ShortcutsList = styled.span`
 	color: black;
-	font-family: 'Londrina Solid', cursive;
+	font-family: 'LondrinaSolid';
 	font-size: 24px;
 	word-spacing: 3px;
 	margin-top: 12px;
