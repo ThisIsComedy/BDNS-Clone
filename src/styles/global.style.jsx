@@ -3,6 +3,7 @@ import Komtitp from "../fonts/Komtitp.woff";
 import Georgia from "../fonts/Georgia.woff";
 import LondrinaSolid from "../fonts/LondrinaSolid.woff";
 import NanumMyeongjo from "../fonts/NanumMyeongjo.woff";
+import LatoLight from "../fonts/LatoLight.woff";
 import LatoRegular from "../fonts/LatoRegular.woff";
 import LatoBold from "../fonts/LatoBold.woff";
 
@@ -44,7 +45,16 @@ const GlobalStyle = createGlobalStyle`
     display: none !important;
   }
 
-  // LatoRegular(300,400)
+  // LatoRegular(300)
+  @font-face {
+    font-family: 'LatoLight';
+    src: local('LatoLight'), local('LatoLight');
+    font-style: normal;
+    src: url(${LatoLight}) format('woff');
+  }
+  // font-family: 'LatoLight','Noto Sans KR';
+
+  // LatoRegular(400)
   @font-face {
     font-family: 'LatoRegular';
     src: local('LatoRegular'), local('LatoRegular');
