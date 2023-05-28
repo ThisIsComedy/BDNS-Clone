@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import GlobalStyle from '../styles/global.style';
+import MenuBanner from '../components/home/MenuBanner';
 
 const Home = () => {
 	return (
@@ -8,40 +9,31 @@ const Home = () => {
 			<BackGroundImg>
 				<LeftSection>
 					<LeftInnerSection>
-						<LanigiroLogo src='./assets/common/lanigirologo.png'/>
-						<MenuBanner>
-							<MenuBannerDiv>SHOP</MenuBannerDiv>
-							<MenuBannerShadow>SHOP</MenuBannerShadow>
-						</MenuBanner>
-						<MenuBanner>
-							<MenuBannerDiv>ROOM</MenuBannerDiv>
-							<MenuBannerShadow>ROOM</MenuBannerShadow>
-						</MenuBanner>
-						<MenuBanner>
-							<MenuBannerDiv>PROGRAMS</MenuBannerDiv>
-							<MenuBannerShadow>PROGRAMS</MenuBannerShadow>
-						</MenuBanner>
-						<MenuBanner>
-							<MenuBannerDiv>ABOUT LANI</MenuBannerDiv>
-							<MenuBannerShadow>ABOUT LANI</MenuBannerShadow>
-						</MenuBanner>
+						<LanigiroLogo src='./assets/common/lanigirologo.png' alt='Lanigiro Logo' />
+						<MenuBanner value = "SHOP" />
+						<MenuBanner value = "ROOM" />
+						<MenuBanner value = "PROGRAMS" />
+						<MenuBanner value = "ABOUT LANI" />
 					</LeftInnerSection>
 					<LeftInnerSection>
-						<BdnsLogo src='./assets/common/bdnslogo.png'/>
-						<MenuBanner>
-							<MenuBannerDiv>SHOP</MenuBannerDiv>
-							<MenuBannerShadow>SHOP</MenuBannerShadow>
-						</MenuBanner>
-						<MenuBanner>
-							<MenuBannerDiv>COLLABORATION</MenuBannerDiv>
-							<MenuBannerShadow>COLLABORATION</MenuBannerShadow>
-						</MenuBanner>
-						<MenuBanner>
-							<MenuBannerDiv>ABOUT</MenuBannerDiv>
-							<MenuBannerShadow>ABOUT</MenuBannerShadow>
-						</MenuBanner>
-						<ShortcutsList>LOGIN • JOIN • MYPAGE • CART</ShortcutsList>
-						<ShortcutsList>INSTAGRAM • YOUTUBE</ShortcutsList>
+						<BdnsLogo src='./assets/common/bdnslogo.png' alt='BDNS Logo' />
+						<MenuBanner value = "SHOP" />
+						<MenuBanner value = "COLLABORATION" />
+						<MenuBanner value = "ABOUT" />
+						<ShortcutsList>
+							<a href='#'>LOGIN</a> • <a href='#'>JOIN</a> • <a href='#'>MYPAGE</a> • <a href='#'>CART</a>
+						</ShortcutsList>
+						<ShortcutsList>
+							<a 
+								href='https://www.instagram.com/bdnspresents/'
+								target='_blank'
+								rel="noreferrer"
+							>INSTAGRAM</a> • <a
+								href='https://www.youtube.com/channel/UC5xLohcPE65Y-U62X6snmRQ'
+								target='_blank'
+								rel='noreferrer'
+							>YOUTUBE</a>
+						</ShortcutsList>
 					</LeftInnerSection>
 				</LeftSection>
 				<RightSection>
@@ -95,32 +87,11 @@ const BdnsLogo = styled.img`
 	margin-bottom: 20px;
 `;
 
-const MenuBanner = styled.div`
-	position: relative;
-`;
-
-const MenuBannerDiv = styled.a`
-	position: relative;
-	font-size: 32px;
-	font-family: KOMTITP;
-	z-index: 999;
-`
-
-const MenuBannerShadow = styled.span`
-	width: 200px;
-	position: absolute;
-	color: black;
-	font-size: 32px;
-	font-family: KOMTITP;
-	left: 6px;
-	top: 5px;
-`;
-
 const ShortcutsList = styled.span`
 	color: black;
 	font-family: 'LondrinaSolid';
-	font-size: 24px;
-	word-spacing: 3px;
+	font-size: 20px;
+	word-spacing: 30px;
 	margin-top: 12px;
 `;
 
