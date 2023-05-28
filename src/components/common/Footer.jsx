@@ -77,7 +77,8 @@ const Footer = () => {
 						</SmallSpan>
 					</AddressFrame>
 					<CopyRight>
-						Copyright © <strong>주식회사비디앤에스</strong>. All rights reserved.
+						Copyright © <strong>주식회사비디앤에스</strong>. All rights
+						reserved.
 					</CopyRight>
 					<AnsimImg src={Ansim} />
 				</RightHalfInnerFrame>
@@ -163,6 +164,7 @@ const SmallSpan = styled.span`
 `;
 
 const CopyRight = styled.p`
+	font-family: "LatoLight", "Noto Sans KR";
 	font-size: 12px;
 	line-height: 35px;
 	padding-bottom: 5px;
