@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-const MenuBanner = (props) => {
+const MenuBanner = ({ value }) => {
   return (
     <>
       <MenuBannerContainer>
-        <MenuBannerBtn>{props.value}</MenuBannerBtn>
-        <MenuBannerShadow>{props.value}</MenuBannerShadow>
+        <MenuBannerBtn>{value}</MenuBannerBtn>
+        <MenuBannerShadow>{value}</MenuBannerShadow>
       </MenuBannerContainer>
     </>
   );
