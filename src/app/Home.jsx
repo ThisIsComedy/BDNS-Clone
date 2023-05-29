@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import GlobalStyle from '../styles/global.style';
 import MenuBanner from '../components/home/MenuBanner';
+import Footer from '../components/common/Footer';
 
 const Home = () => {
 	return (
@@ -44,6 +45,7 @@ const Home = () => {
 					<OgamManjok>오감이 만족하는 안식처</OgamManjok>
 				</RightSection>
 			</BackGroundImg>
+			<Footer />
 		</>
 	);
 };
@@ -57,6 +59,7 @@ const BackGroundImg = styled.div`
 	background-size: cover;
 	display: flex;
 	flex-direction: row;
+	margin-bottom: -125px;
 `;
 
 const LeftSection = styled.div`
