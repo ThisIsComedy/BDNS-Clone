@@ -51,12 +51,13 @@ const Home = () => {
 };
 
 const BackGroundImg = styled.div`
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	color: white;
 	background-image: url('./assets/home/background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position-y: center;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: -125px;
