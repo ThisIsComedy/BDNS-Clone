@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import GlobalStyle from '../styles/global.style';
 import MenuBanner from '../components/home/MenuBanner';
 import Footer from '../components/common/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (
@@ -11,18 +12,26 @@ const Home = () => {
 				<LeftSection>
 					<LeftInnerSection>
 						<LanigiroLogo src='./assets/common/lanigirologo.png' alt='Lanigiro Logo' />
-						<MenuBanner value = "SHOP" />
-						<MenuBanner value = "ROOM" />
-						<MenuBanner value = "PROGRAMS" />
-						<MenuBanner value = "ABOUT LANI" />
+						<Link to="/lanigiro/shop"><MenuBanner value = "SHOP" /></Link>
+						<Link to="/lanigiro/room"><MenuBanner value = "ROOM" /></Link>
+						<Link to="/lanigiro/programs"><MenuBanner value = "PROGRAMS" /></Link>
+						<Link to="/lanigiro/about"><MenuBanner value = "ABOUT LANI" /></Link>
 					</LeftInnerSection>
 					<LeftInnerSection>
 						<BdnsLogo src='./assets/common/bdnslogo.png' alt='BDNS Logo' />
-						<MenuBanner value = "SHOP" />
-						<MenuBanner value = "COLLABORATION" />
-						<MenuBanner value = "ABOUT" />
+						<Link to="/bdns/shop"><MenuBanner value = "SHOP" /></Link>
+						<Link to="/bdns/collaboration"><MenuBanner value = "COLLABORATION" /></Link>
+						<Link to="/bdns/about"><MenuBanner value = "ABOUT" /></Link>
 						<ShortcutsList>
-							<a href='#'>LOGIN</a> • <a href='#'>JOIN</a> • <a href='#'>MYPAGE</a> • <a href='#'>CART</a>
+							<Link 
+								to="/member/login" 
+							>LOGIN</Link> • <Link 
+								to="/member/join"
+							>JOIN</Link> • <Link 
+								to="/member/page"
+							>MYPAGE</Link> • <Link 
+								to="/member/cart"
+							>CART</Link>
 						</ShortcutsList>
 						<ShortcutsList>
 							<a 
