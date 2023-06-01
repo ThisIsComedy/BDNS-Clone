@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import Ansim from "/assets/common/ansim.png";
 
@@ -11,31 +12,47 @@ const Footer = () => {
 					<QuarterInnerFrame>
 						<SectionTitle>ABOUT</SectionTitle>
 						<SectionList>
-							<SectionItem>BDNS</SectionItem>
-							<SectionItem>COLLABORATION</SectionItem>
-							<SectionItem>ORIGINAL</SectionItem>
+							<Link to='/bdns/about'>
+								<SectionItem>BDNS</SectionItem>
+							</Link>
+							<Link to='/bdns/collaboration'>
+								<SectionItem>COLLABORATION</SectionItem>
+							</Link>
+							<Link to='/bdns/shop'>
+								<SectionItem>ORIGINAL</SectionItem>
+							</Link>
 						</SectionList>
 					</QuarterInnerFrame>
 					<QuarterInnerFrame>
 						<SectionTitle>SOCIAL</SectionTitle>
 						<SectionList>
-							<SectionItem>INSTAGRAM</SectionItem>
-							<SectionItem>YOUTUBE</SectionItem>
+							<a
+								href='https://www.instagram.com/bdnspresents/'
+								target='_blank'
+								rel='noreferrer'>
+								<SectionItem>INSTAGRAM</SectionItem>
+							</a>
+							<a
+								href='https://www.youtube.com/channel/UC5xLohcPE65Y-U62X6snmRQ'
+								target='_blank'
+								rel='noreferrer'>
+								<SectionItem>YOUTUBE</SectionItem>
+							</a>
 						</SectionList>
 					</QuarterInnerFrame>
 					<QuarterInnerFrame>
 						<SectionTitle>HELP</SectionTitle>
 						<SectionList>
-							<SectionItem>MYPAGE</SectionItem>
-							<SectionItem>HELP&FAQ</SectionItem>
-							<SectionItem>Q&A</SectionItem>
+							<Link to='/member/cart'><SectionItem>MYPAGE</SectionItem></Link>
+							<Link to='/help/faq'><SectionItem>HELP&FAQ</SectionItem></Link>
+							<Link to='/help/board'><SectionItem>Q&A</SectionItem></Link>
 						</SectionList>
 					</QuarterInnerFrame>
 					<QuarterInnerFrame>
 						<SectionTitle>INFO</SectionTitle>
 						<SectionList>
-							<SectionItem>PRIVACY POLICY</SectionItem>
-							<SectionItem>AGREEMENT</SectionItem>
+							<Link to='/member/privacy'><SectionItem>PRIVACY POLICY</SectionItem></Link>
+							<Link to='/member/agreement'><SectionItem>AGREEMENT</SectionItem></Link>
 						</SectionList>
 					</QuarterInnerFrame>
 				</LeftHalfInnerFrame>

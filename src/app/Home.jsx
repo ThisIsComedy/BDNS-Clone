@@ -143,7 +143,7 @@ const OgamManjok = styled.div`
 	width: 70%;
 	height: 138px;
 	font-size: 34px;
-	font-family: 'Nanum Myeongjo', serif;
+	font-family: 'NanumMyeongjo', serif;
 	background-color: #001149;
 	position: absolute;
 	bottom: 75px;

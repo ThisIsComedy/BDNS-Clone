@@ -7,19 +7,21 @@ const Header = () => {
 	return (
 		<HeaderContainer>
 			<InnerFrame>
-				<HoonysLogo src={Logo} />
+				<Link to='/'>
+					<HoonysLogo src={Logo} />
+				</Link>
 				<Navigation>
 					<li>
-						<a href='#'>LOGIN</a>
+						<Link to='/member/login'>LOGIN</Link>
 					</li>
 					<li>
-						<a href='#'>JOIN</a>
+						<Link to='/member/join'>JOIN</Link>
 					</li>
 					<li>
-						<a href='#'>MYPAGE</a>
+						<Link to='/member/page'>MYPAGE</Link>
 					</li>
 					<li>
-						<a href='#'>CART</a>
+						<Link to='/member/cart'>CART</Link>
 					</li>
 				</Navigation>
 			</InnerFrame>
