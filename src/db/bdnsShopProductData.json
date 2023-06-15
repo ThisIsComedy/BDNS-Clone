@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "imgUrl": "https://bdns.co.kr/web/product/medium/202304/309fe9d40b4910d630fd6be56bed07cb.png",
+    "name":"GOLD BUTTON PACKAGE GEL HARD CASE",
+    "price": "₩26,000"
+  },
+  {
+    "id": 2,
+    "imgUrl": "https://bdns.co.kr/web/product/medium/202304/6433d57aa56e485ccc404c30e5eb5b48.png",
+    "name":"GOLD BUTTON PACKAGE BLACK JELLY CASE (IPhone)",
+    "price": "₩26,000"
+  },
+  {
+    "id": 3,
+    "imgUrl": "https://bdns.co.kr/web/product/medium/202304/e6bbdf4684265f309591155557b284e6.png",
+    "name":"CUSTOM LOGO GEL HARD CASE (IPhone)",
+    "price": "₩26,000"
+  },
+  {
+    "id": 4,
+    "imgUrl": "https://bdns.co.kr/web/product/medium/202304/28ee19164a465a1e06abe2c0e2726453.png",
+    "name":"CUSTOM LOGO GEL HARD CASE (Galaxy)",
+    "price": "₩26,000"
+  }
+]
