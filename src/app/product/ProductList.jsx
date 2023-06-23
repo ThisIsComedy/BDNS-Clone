@@ -1,10 +1,10 @@
 import React from 'react';
+import { styled } from 'styled-components';
+import data from '../../db/bdnsShopProductData.json';
 import GlobalStyle from '../../styles/global.style';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import { styled } from 'styled-components';
 import ListObject from '../../components/common/ListObject';
-import data from '../../db/bdnsShopProductData.json';
 
 const ProductList = () => {
 	return (
@@ -37,9 +37,8 @@ const ListContainer = styled.div`
 const TitleDiv = styled.div`
 	text-align: center;
 	font-size: 34px;
-	font-family: 'LatoRegular','Noto Sans KR';
-	font-weight: bold;
-	margin: 35px 0px 45px;
+	font-family: 'LatoBold','Noto Sans KR';
+	margin: 40px 0px 55px;
 `;
 
 export default ProductList;
