@@ -1,8 +1,15 @@
 import { styled } from 'styled-components';
 
 const Pagination = ({ total, limits, page, setPage }) => {
+  /**
+   * total : 상품 총 개수
+   * limits : 한 페이지에 표시되는 상품 개수
+   * page : 현재 페이지
+   * setPage : 현재 페이지를 정하는 setter
+   * const [ page, setPage ] = useState(1) -> useState로 선언해서 props로 넘겨줘야 함
+   */
 
-  const numPagesList = Math.ceil(total / limits );
+  const numPagesList = Math.ceil(total / limits);
 
   return (
     <>
