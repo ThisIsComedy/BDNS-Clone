@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from 'styled-components';
 
-const ListObject = ({ key, imgUrl, name, price }) => {
+const ListObject = ({ key, imgUrl, name, price, quantity }) => {
   return (
     <>
       <ObjectContainer>
@@ -12,6 +12,9 @@ const ListObject = ({ key, imgUrl, name, price }) => {
         <ProductPriceSpan>
           <ProductPrice>{price}</ProductPrice>
         </ProductPriceSpan>
+        <ProductSoldoutDiv>
+          { !quantity ? <img src='/assets/product_list/sold_out.jpg' /> : null }
+        </ProductSoldoutDiv>
       </ObjectContainer>
     </>
   );
@@ -45,6 +48,13 @@ const ProductPriceSpan = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const ProductSoldoutDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 `;
 
 const ProductPrice = styled.span`

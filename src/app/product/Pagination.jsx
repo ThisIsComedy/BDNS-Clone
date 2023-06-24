@@ -12,17 +12,17 @@ const Pagination = ({ total, limits, page, setPage }) => {
   const numPagesList = Math.ceil(total / limits);
 
   return (
-    <>
+    <Container>
       <Pages>
         <Button
           onClick={() => setPage(1)}
         >
-          <Image src='/assets/product_list/btn_page_first.png' />
+          <Image src='/assets/product_list/button/btn_page_first.png' />
         </Button>
         <Button
           onClick={() => setPage(page - 1)}
         >
-          <Image src='/assets/product_list/btn_page_prev.png' />
+          <Image src='/assets/product_list/button/btn_page_prev.png' />
         </Button>
         {
           Array(numPagesList)
@@ -40,17 +40,21 @@ const Pagination = ({ total, limits, page, setPage }) => {
         <Button
           onClick={() => setPage(page + 1)}
         >
-          <Image src='/assets/product_list/btn_page_next.png' />
+          <Image src='/assets/product_list/button/btn_page_next.png' />
         </Button>
         <Button
           onClick={() => setPage(numPagesList)}
         >
-          <Image src='/assets/product_list/btn_page_last.png' />
+          <Image src='/assets/product_list/button/btn_page_last.png' />
         </Button>
       </Pages> 
-    </>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  margin-top: 20px;
+`;
 
 const Pages = styled.div`
   display: flex;

@@ -28,6 +28,7 @@ const ProductList = () => {
 							imgUrl={object.imgUrl}
 							name={object.name}
 							price={object.price}
+							quantity={object.quantity}
 						/>
 				))}
 			</ListContainer>
