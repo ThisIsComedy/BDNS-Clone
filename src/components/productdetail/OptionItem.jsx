@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const OptionItem = ({ title, options }) => {
-	console.log(options);
-
 	return (
 		<OptionContainer>
 			<OptionTitleWrap>
@@ -34,7 +32,7 @@ const OptionTitleWrap = styled.div`
 	color: #353535;
 	width: 115px;
 	margin-top: 15px;
-	padding: 7px 0 8px 0;
+	padding: 7px 0 7px 0;
 	text-align: left;
 `;
 

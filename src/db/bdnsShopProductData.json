@@ -148,7 +148,54 @@
 		"imgUrl": "https://bdns.co.kr/web/product/medium/202304/28ee19164a465a1e06abe2c0e2726453.png",
 		"name": "CUSTOM LOGO GEL HARD CASE (Galaxy)",
 		"price": "₩26,000",
-		"quantity": 1
+		"quantity": 1,
+		"options": [
+			{
+				"optionName": "PHONE TYPE",
+				"optionList": [
+					"Galaxy S 20",
+					"Galaxy S 20 +",
+					"Galaxy S 20 Ultra",
+					"Galaxy S 21",
+					"Galaxy S 21 +",
+					"Galaxy S 21 Ultra",
+					"Galaxy S 22",
+					"Galaxy S 22 +",
+					"Galaxy S 22 Ultra",
+					"Galaxy S 23",
+					"Galaxy S 23 +",
+					"Galaxy S 23 Ultra",
+					"Galaxy Z Flip 3(+₩2,500)",
+					"Galaxy Z Flip 4(+₩2,500)"
+				]
+			},
+			{
+				"optionName": "COLOR",
+				"optionList": ["YELLOW", "RED", "CLEAR"]
+			},
+			{
+				"optionName": "CHARACTER",
+				"optionList": [
+					"1 문이병 (수박)",
+					"2 문이병 (귀도리)",
+					"3 복학생후니쓰",
+					"4 후니스님",
+					"5 공장장",
+					"6 문땡이",
+					"7 장경자여사",
+					"8 후니쓰",
+					"9 문상기자",
+					"10 털보",
+					"11 명숙"
+				]
+			}
+		],
+		"detailImg": [
+			"https://bdns.co.kr/web/upload/NNEditor/20230328/ECBBA4EC8AA4ED858020EAB0A4EB9FADEC8B9C201.png",
+			"https://bdns.co.kr/web/upload/NNEditor/20230322/copy-1679455363-ECBBA4EC8AA4ED85802022028EAB3B5ED86B529.png",
+			"https://bdns.co.kr/web/upload/NNEditor/20230321/copy-1679388672-ECBBA4EC8AA4ED858020EAB0A4EB9FADEC8B9C203.png",
+			"https://bdns.co.kr/web/upload/NNEditor/20230410/ECBBA4EC8AA4ED858020EAB0A4EB9FADEC8B9C204.png"
+		]
 	},
 	{
 		"id": 5,

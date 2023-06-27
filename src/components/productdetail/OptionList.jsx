@@ -9,14 +9,14 @@ const OptionList = ({ id }) => {
 	return (
 		<OptionWrap>
 			{options.map(opt => (
-				<OptionItem title={opt.optionName} options={opt.optionList} />
+				<OptionItem key={opt} title={opt.optionName} options={opt.optionList} />
 			))}
 		</OptionWrap>
 	);
 };
 
 const OptionWrap = styled.div`
-	margin-top: 40px;
+	margin-top: 45px;
 `;
 
 export default OptionList;
