@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
-const ListObject = ({ key, imgUrl, name, price, quantity }) => {
+const ListObject = ({ id, imgUrl, name, price, quantity }) => {
   return (
-    <>
+    <Link to={`/bdns/shop/${id}`}>
       <ObjectContainer>
         <ProductImage src={imgUrl}/>
         <ProductNameSpan>
@@ -16,7 +17,7 @@ const ListObject = ({ key, imgUrl, name, price, quantity }) => {
           { !quantity ? <img src='/assets/product_list/sold_out.jpg' /> : null }
         </ProductSoldoutDiv>
       </ObjectContainer>
-    </>
+    </Link>
   );
 };
 

@@ -25,6 +25,7 @@ const ProductList = () => {
 					.map(object => (
 						<ListObject 
 							key={object.id}
+							id={object.id}
 							imgUrl={object.imgUrl}
 							name={object.name}
 							price={object.price}
