@@ -42,7 +42,14 @@
 					"Galaxy Z Flip 4(+₩2,500)"
 				]
 			}
+		],
+    "detailImg": [
+			"https://bdns.co.kr/web/upload/NNEditor/20230328/EAB3A8EB939CEBB284ED8ABC20ED88ACEBAA85201.png",
+			"https://bdns.co.kr/web/upload/NNEditor/20230321/copy-1679387754-EAB3A8EB939CEBB284ED8ABC2028EAB3B5ED86B529202.png",
+			"https://bdns.co.kr/web/upload/NNEditor/20230321/copy-1679388704-EAB3A8EB939CEBB284ED8ABC20ED88ACEBAA85203.png",
+      "https://bdns.co.kr/web/upload/NNEditor/20230410/EAB3A8EB939CEBB284ED8ABC20ED88ACEBAA85204.png"
 		]
+
 	},
 	{
 		"id": 2,
@@ -73,6 +80,11 @@
 					"IPhone 14 Plus"
 				]
 			}
+		],
+    "detailImg": [
+			"https://bdns.co.kr/web/upload/NNEditor/20230328/EAB3A8EB939CEBB284ED8ABC20EBB894EB9E99201.png",
+      "https://bdns.co.kr/web/upload/NNEditor/20230321/copy-1679384256-EAB3A8EB939CEBB284ED8ABC2028EAB3B5ED86B529202.png",
+      "https://bdns.co.kr/web/upload/NNEditor/20230410/EAB3A8EB939CEBB284ED8ABC20EBB894EB9E99203.png"
 		]
 	},
 	{
@@ -124,6 +136,11 @@
 					"11 명숙"
 				]
 			}
+		],
+		"detailImg": [
+			"https://bdns.co.kr/web/upload/NNEditor/20230328/ECBBA4EC8AA4ED8580201.png",
+			"https://bdns.co.kr/web/upload/NNEditor/20230322/ECBBA4EC8AA4ED85802022028EAB3B5ED86B529.png",
+			"https://bdns.co.kr/web/upload/NNEditor/20230410/ECBBA4EC8AA4ED8580203.png"
 		]
 	},
 	{

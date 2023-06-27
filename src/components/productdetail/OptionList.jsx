@@ -5,7 +5,6 @@ import data from "../../db/bdnsShopProductData.json";
 
 const OptionList = ({ id }) => {
 	const [options, setOptions] = useState(data[id].options);
-	console.log(options);
 
 	return (
 		<OptionWrap>
@@ -18,7 +17,6 @@ const OptionList = ({ id }) => {
 
 const OptionWrap = styled.div`
 	margin-top: 40px;
-	/* border: 1px solid black; */
 `;
 
 export default OptionList;
