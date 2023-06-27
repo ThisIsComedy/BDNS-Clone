@@ -63,7 +63,7 @@ const BackGroundImg = styled.div`
 	width: 100%;
 	height: 100vh;
 	color: white;
-	background-image: url('./assets/home/background.jpg');
+	background-image: url('/assets/home/background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-y: center;
