@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Home from "./app/Home";
+import About from "./app/bdns_about/About";
+import Login from "./app/login/Login";
+import Join from "./app/join/Join";
+import ProductDetail from "./app/product/ProductDetail";
+import ProductList from "./app/product/ProductList";
+import Collaboration from "./app/product/Collaboration";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact={true} element={<Home />} />
+        <Route path="/bdns/about" element={<About />} />
+        <Route path="/bdns/shop" element={<ProductList />} />
+        <Route path="/bdns/collaboration" element={<Collaboration />} />
+        <Route path="/bdns/shop/:id" element={<ProductDetail />} />
+        <Route path="/member/login" element={<Login />} />
+        <Route path="/member/join" element={<Join />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
