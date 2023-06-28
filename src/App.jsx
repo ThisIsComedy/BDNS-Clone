@@ -1,6 +1,7 @@
 import Home from "./app/Home";
 import About from "./app/bdns_about/About";
 import Login from "./app/login/Login";
+import Join from "./app/join/Join";
 import ProductDetail from "./app/product/ProductDetail";
 import ProductList from "./app/product/ProductList";
 import Collaboration from "./app/product/Collaboration";
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/bdns/collaboration" element={<Collaboration />} />
         <Route path="/bdns/shop/:id" element={<ProductDetail />} />
         <Route path="/member/login" element={<Login />} />
+        <Route path="/member/join" element={<Join />} />
       </Routes>
     </BrowserRouter>
   );
